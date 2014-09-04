@@ -1,0 +1,4 @@
+ngFlowPlayer
+============
+
+Angular FlowPlayer Directive
