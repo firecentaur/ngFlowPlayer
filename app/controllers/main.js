@@ -1,4 +1,3 @@
-'use strict';
 
 /**
  * @ngdoc function
@@ -7,11 +6,6 @@
  * # MainCtrl
  * Controller of the flowplayerdirectiveApp
  */
-angular.module('flowplayerdirectiveApp')
-  .controller('MainCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
-  });
+app.controller('MainCtrl', function ($scope,flowPlayerService) {
+    flowPlayerService.construct('js/flowplayer/example/scooter.flv');
+});
